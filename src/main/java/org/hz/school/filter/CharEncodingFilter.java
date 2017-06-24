@@ -3,6 +3,7 @@ package org.hz.school.filter;
 
 
 import com.avaje.ebean.Ebean;
+import org.hz.school.model.Person;
 import org.hz.school.util.Logger;
 
 import javax.servlet.*;
@@ -17,9 +18,8 @@ public class CharEncodingFilter implements Filter {
     String encoding;
     public void init(FilterConfig cfg) throws ServletException {
         String e=cfg.getInitParameter("encoding");
-        log.info("------->>>>>>>>>>>>>>init CharEncodingFilter ");
-//        int num= Ebean.find(TotalCourse.class).findRowCount();
-//        System.out.println("------------>>>num:"+num);
+        int num= Ebean.find(Person.class).findRowCount();
+        System.out.println("------------>>>num:"+num);
         if(e==null||"".equals(e.trim())){
             encoding="UTF-8";
         }else {

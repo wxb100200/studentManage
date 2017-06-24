@@ -13,6 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>4.1.4.RELEASE</spring.version>
         <ebean.version>2.8.2</ebean.version>
+        <hillwind.common.version>0.2.1</hillwind.common.version>
     </properties>
 
     <dependencies>
@@ -158,6 +159,11 @@
             <version>2.1</version>
         </dependency>
         <!-- Quartz Dependence start -->
+        <dependency>
+            <groupId>cn.hillwind.common</groupId>
+            <artifactId>common-util</artifactId>
+            <version>${hillwind.common.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
