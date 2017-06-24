@@ -1,0 +1,6 @@
+.idea
+target
+studentManage.iml
+mySql-create.sql
+mySql-drop.sql
+src/test/java
